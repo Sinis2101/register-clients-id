@@ -5,8 +5,8 @@ public class Person {
     private IDType idType;
     private String id;
 
-    public Person(IDType idType, String id) {
-        this.idType = idType;
+    public Person(int idType, String id) {
+        this.idType = IDType.values()[idType-1];
         this.id = id;
     }
 
@@ -17,4 +17,13 @@ public class Person {
     public String getId() {
         return id;
     }
+
+    public boolean isEven() {
+
+        int idLastNumber = Integer.parseInt(id.substring(id.length() - 1));
+
+        return idLastNumber%2 == 0;
+
+    }
+
 }
