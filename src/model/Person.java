@@ -20,9 +20,9 @@ public class Person {
 
     public boolean isEven() {
 
-        int idLastNumber = Integer.parseInt(String.valueOf(id.charAt((id.length()-2))));
+        int idSecondLastNumber = Integer.parseInt(String.valueOf(id.charAt((id.length()-2))));
 
-        return idLastNumber%2 == 0;
+        return idSecondLastNumber%2 == 0;
 
     }
 
