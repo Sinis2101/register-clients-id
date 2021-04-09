@@ -24,7 +24,7 @@ public class Marketplace {
 
         if(person.getIdType()==IDType.TI) {
             throw new IDTypeException(person.getId());
-        } else if(dayIsEven()!=person.isEven()) {
+        } else if(dayIsEven()==person.isEven()) {
             throw new IDParityException(person.getId(), currentDay);
         } else {
             accessors.add(person);

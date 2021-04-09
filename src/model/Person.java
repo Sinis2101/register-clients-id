@@ -20,7 +20,7 @@ public class Person {
 
     public boolean isEven() {
 
-        int idLastNumber = Integer.parseInt(id.substring(id.length() - 1));
+        int idLastNumber = Integer.parseInt(String.valueOf(id.charAt((id.length()-2))));
 
         return idLastNumber%2 == 0;
 
