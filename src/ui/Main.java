@@ -58,7 +58,7 @@ public class Main {
                         mp.attemptAccess(new Person(idType, id));
                         System.out.print("La persona con número de documento " + id + " puede ingresar. Presione ENTER para continuar..."); sc.nextLine();
                     } catch (IDParityException | IDTypeException e) {
-                        System.out.print(e.getMessage() + " Presione ENTER para continuar..."); sc.nextLine();
+                        System.err.print(e.getMessage() + " Presione ENTER para continuar..."); sc.nextLine();
                     }
                     break;
                 case 2:
